@@ -21,4 +21,4 @@ $fb_stream.='-acodec libvo_aacenc  -ar 44100 -b:a 128k -pix_fmt yuv420p -profile
 $fb_stream.='-vcodec libx264 -preset veryfast -g 30 -r 30 -f flv '.'"rtmps://live-api-s.facebook.com:443/rtmp/{$FB_PERSISTENT_KEY}"';
 
 //go to live
-$shell_exec($fb_stream);
+shell_exec($fb_stream);
